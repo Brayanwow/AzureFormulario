@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!--Logo de la navegacion-->
+            <a href="" class="navbar-brand">
+              <!--Imagen-->
+              <img src="img/icono.jpeg" alt="" width="50" height="50">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Opciones de navegacion--> 
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><h5>Registrar</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="#"><h5>Registros</h5></a>
+                    </li>
+                </ul>
+                <!--Fin de opciones de navegacion-->
+            </div>
+        </div>
+    </nav>
+    <!--Fin Barra de navegacion-->
+    <center><h1>Datos Basicos:</h1>
+        <!--Inicio de formulario-->
+        <form action="" method="post">
+                <!--Nombre-->
+                  <div class="form-group col-lg-5">
+                      <label for="nombre" ><h6>Nombre (*) :</h6></label>
+                      <input type="text" name="nombre" maxlength="150" size="50" class="form-control" autocomplete="none" placeholder="Ingrese su nombre" />
+                  </div>
+                <!--Apellido-->  
+                  <div class="form-group col-lg-5">
+                      <label for="apellido"><h6>Apellido :</h6></label>
+                      <input type="text" name="apellido" maxlength="150" size="50" class="form-control" autocomplete="none" placeholder="Ingrese su apellido"/>
+                  </div>
+                <!--Email-->
+                  <div class="form-group col-lg-5">
+                      <label for="email" ><h6>Email (*) :</h6></label>
+                      <input type="email" name="email" maxlength="120" size="50" class="form-control" autocomplete="none" placeholder="Ingrese su Email" />
+                  </div>
+                <!--DNI-->  
+                  <div class="form-group col-lg-5">
+                      <label for="numerodoc"><h6>Documento de Identidad (*) :</h6></label>
+                      <input type="text" name="numerodoc" maxlength="8" size="8" class="form-control" autocomplete="none" placeholder="Ingrese su DNI"/>
+                  </div>
+                <!--Nacimiento-->
+                  <div class="form-group col-lg-5">
+                      <label for="fechanac"><h6>Fecha de Nacimiento (*) :</h6></label>
+                      <input type="date" name="fechanac" id="fechanac" class="form-control" autocomplete="none" />
+                  </div>
+                <!--Sexo-->
+                  <div class="form-group col-lg-5">
+                    <label for="selectsexo"><h6>Sexo (*) :</h6></label>
+                        <select name="selectsexo" class="form-control"> 
+                        <option disabled selected>Selecciona su sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Fenemino">Fenemino</option>
+                        </select>
+                  </div> 
+                  <br>
+                <!--Envio-->
+                  <div class="card-footer">
+                    <button class="btn btn-primary"><h5>Guardar</h5></button>
+                  </div>
+            </form>
+        <!--fin de formulario-->
+        </center>
+</body>
+</html>
